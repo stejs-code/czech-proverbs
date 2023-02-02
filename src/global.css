@@ -6,39 +6,53 @@
     @apply py-2;
     border-radius: 15px;
     transition: all .3s;
+    text-decoration: underline black solid;
 }
 
 .magic-input:before {
-    content: "";
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-    right: 0;
-    border: 1px #1a1a1a solid;
-    display: block;
+    content: "‎ ‎ ‎ ‎ ‎ ‎ ";
+    text-decoration: underline black solid;
+    /*padding-left: 40px;*/
+}
+
+.magic-input:after {
+    content: "‎ ‎ ‎ ‎ ‎ ‎ ";
+    text-decoration: underline black solid;
+    /*padding-left: 40px;*/
 }
 
 .magic-input[data-correct="true"] {
     background: #1ee51e;
     color: white;
-
+    text-decoration: none;
 }
+
 .magic-input[data-correct="true"]:before {
     opacity: 0;
+    text-decoration: none;
 
 }
+
 .magic-input[data-correct="true"]:after {
     content: "🎉";
     padding-left: 18px;
+    text-decoration: none;
 }
 
 
 .magic-input[data-correct="false"] {
     background: orangered;
     color: white;
-
+    text-decoration:none;
 }
+
 .magic-input[data-correct="false"]:before {
     opacity: 0;
+    text-decoration:none;
+}
 
+
+.magic-input[data-correct="false"]:after {
+    opacity: 0;
+    text-decoration:none;
 }

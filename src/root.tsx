@@ -20,7 +20,7 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en">
+      <body lang="en" class={"overflow-x-hidden"}>
         <RouterOutlet />
         <ServiceWorkerRegister />
         <script src="/src/confetti.js"></script>

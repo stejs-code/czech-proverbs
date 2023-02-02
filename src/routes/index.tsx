@@ -1,7 +1,22 @@
-import type { QwikKeyboardEvent} from "@builder.io/qwik";
+import type { QwikKeyboardEvent } from "@builder.io/qwik";
 import { $, component$, useStore, useTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import * as fs from "fs";
+
+export const surrender = (spanElement: HTMLSpanElement, button: HTMLButtonElement, blankWord: string, next: () => void) => {
+
+
+  if (spanElement.dataset.correct === "false") {
+    next();
+    spanElement.dataset.correct = "";
+    spanElement.innerText = "";
+    button.innerText = "nevím";
+    return;
+  }
+  spanElement.dataset.correct = "false";
+  spanElement.innerText = blankWord;
+  button.innerText = "další";
+};
 
 export default component$(() => {
 
@@ -21,27 +36,19 @@ export default component$(() => {
     store.active = getRandomItem(store.data);
   });
 
+
   const handleAnswerChange = $((event: QwikKeyboardEvent<HTMLSpanElement>) => {
-    console.log(event);
     if (event.key === "Escape") {
       // @ts-ignore
-      if (event.target.dataset.correct === "false"){
+      surrender(event.target, document.getElementById("tm-surrender"), store.active.blankWord, () => {
         store.active = getRandomItem(store.data);
-        // @ts-ignore
-        event.target.dataset.correct = "";
-        // @ts-ignore
-        event.target.innerText = "";
-        return;
-      }
-      // @ts-ignore
-      event.target.dataset.correct = "false";
-      // @ts-ignore
-      event.target.innerText = store.active.blankWord;
+      });
+
       return;
     }
 
     // @ts-ignore
-    if (event.target.dataset.correct === "false"){
+    if (event.target.dataset.correct === "false") {
       return;
     }
     // @ts-ignore
@@ -65,24 +72,38 @@ export default component$(() => {
   });
   // @ts-ignore
   return (
-    <div class={"mx-auto mt-10"}>
+    <div class={"mx-auto mt-10 mb-20 "}>
       <div>
-        <p class={"text-4xl text-center max-w-4xl"}>{store.active.renderText[0]} <span onKeyUp$={handleAnswerChange} autofocus
-                                                                 contentEditable={"true"}
-                                                                 class={"relative magic-input outline-none w-auto px-10"}
-                                                                 autocorrect="off" autocapitalize="off"
-        ></span> &nbsp;{store.active.renderText[1]}
+        <p class={"text-4xl text-center max-w-4xl leading-relaxed"}>{store.active.renderText[0]} <span id={"tm-magic-input"}
+                                                                                       onKeyUp$={handleAnswerChange}
+                                                                                       autofocus
+                                                                                       contentEditable={"true"}
+                                                                                       class={"relative magic-input outline-none w-auto"}
+                                                                                       autocorrect="off"
+                                                                                       autocapitalize="off"
+        ></span> &nbsp;{store.active.renderText[1]} <br />
+          <button id={"tm-surrender"}
+                  class={"py-2 text-lg px-10 bg-sky-500 rounded-2xl text-white mt-8 mx-auto"}
+                  onClick$={() => {
+                    // @ts-ignore
+                    surrender(document.getElementById("tm-magic-input"), document.getElementById("tm-surrender"), store.active.blankWord, () => {
+                      store.active = getRandomItem(store.data);
+                    });
+                  }}
+          >nevím
+          </button>
         </p>
+
       </div>
-      <div class={"max-w-lg m-auto"}>
-        <h3 className={"text-center mt-48 text-2xl font-bold mb-4"}>Ovládání</h3>
-        <p className={""}>Správná odpověď se sama ukáže. Na diakritice a velikosti písmen nezáleží.</p>
-        <ul className={"list-disc"}>
+      <div class={"max-w-lg m-auto px-4"}>
+        <h3 class={"text-center mt-48 text-2xl font-bold mb-4"}>Ovládání</h3>
+        <p class={""}>Správná odpověď se sama ukáže. Na diakritice a velikosti písmen nezáleží.</p>
+        <ul class={"list-disc"}>
           <li>
-            [esc] – ukáže správnou odpověď
+            [esc] – ukáže správnou odpověď – nahrazuje tlačítko „nevím“
           </li>
           <li>
-            [esc] * 2 – ukáže správnou odpověď a pokračuje na další příklad
+            [esc] * 2 – ukáže správnou odpověď a pokračuje na další příklad – nahrazuje tlačítko „další“
           </li>
         </ul>
       </div>
