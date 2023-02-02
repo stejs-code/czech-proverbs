@@ -74,16 +74,17 @@ export default component$(() => {
   return (
     <div class={"mx-auto mt-10 mb-20 "}>
       <div>
-        <p class={"text-4xl text-center max-w-4xl leading-relaxed"}>{store.active.renderText[0]} <span id={"tm-magic-input"}
-                                                                                       onKeyUp$={handleAnswerChange}
-                                                                                       autofocus
-                                                                                       contentEditable={"true"}
-                                                                                       class={"relative magic-input outline-none w-auto"}
-                                                                                       autocorrect="off"
-                                                                                       autocapitalize="off"
+        <p class={"text-4xl text-center max-w-4xl leading-relaxed"}>{store.active.renderText[0]} <span
+          id={"tm-magic-input"}
+          onKeyUp$={handleAnswerChange}
+          autofocus
+          contentEditable={"true"}
+          class={"relative magic-input outline-none w-auto"}
+          autocorrect="off"
+          autocapitalize="off"
         ></span> &nbsp;{store.active.renderText[1]} <br />
           <button id={"tm-surrender"}
-                  class={"py-2 text-lg px-10 bg-sky-500 rounded-2xl text-white mt-8 mx-auto"}
+                  class={"py-2 text-lg px-10 border-2 border-sky-600 rounded-2xl mt-8 mx-auto"}
                   onClick$={() => {
                     // @ts-ignore
                     surrender(document.getElementById("tm-magic-input"), document.getElementById("tm-surrender"), store.active.blankWord, () => {
@@ -96,7 +97,7 @@ export default component$(() => {
 
       </div>
       <div class={"max-w-lg m-auto px-4"}>
-        <h3 class={"text-center mt-48 text-2xl font-bold mb-4"}>Ovládání</h3>
+        <h2 class={"text-center mt-48 text-2xl font-bold mb-4"}>Ovládání</h2>
         <p class={""}>Správná odpověď se sama ukáže. Na diakritice a velikosti písmen nezáleží.</p>
         <ul class={"list-disc"}>
           <li>
@@ -199,5 +200,19 @@ export function slugify(text: string) {
 }
 
 export const head: DocumentHead = {
-  title: "Česká přísloví"
+  title: "Česká přísloví",
+  meta: [
+    {
+      name: "description",
+      content: "Rychlé procvičovní na česká přísloví. Ideální pro přijimací zkoušky."
+    },
+    {
+      name: "keywords",
+      content: "přijimací zkoušky, přísloví, čeština, procvičování"
+    },
+    {
+      name: "author",
+      content: "Tom Stejskal"
+    }
+  ]
 };
