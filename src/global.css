@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.magic-input {
+    @apply py-2;
+    border-radius: 15px;
+    transition: all .3s;
+}
+
+.magic-input:before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    border: 1px #1a1a1a solid;
+    display: block;
+}
+
+.magic-input[data-correct="true"] {
+    background: #1ee51e;
+    color: white;
+
+}
+.magic-input[data-correct="true"]:before {
+    opacity: 0;
+
+}
+.magic-input[data-correct="true"]:after {
+    content: "🎉";
+    padding-left: 18px;
+}
+
+
+.magic-input[data-correct="false"] {
+    background: orangered;
+    color: white;
+
+}
+.magic-input[data-correct="false"]:before {
+    opacity: 0;
+
+}

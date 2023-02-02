@@ -1,0 +1,1310 @@
+[
+  {
+    "text": "Ať se perou, ať se vadí, jenom když se mají rádi!",
+    "blank": 11
+  },
+  {
+    "text": "Bezdomovec je doma všude.",
+    "blank": 1
+  },
+  {
+    "text": "Bez práce nejsou koláče.",
+    "blank": 4
+  },
+  {
+    "text": "Bez peněz do hospody nelez.",
+    "blank": 4
+  },
+  {
+    "text": "Blázen dává, moudrý bere.",
+    "blank": 3
+  },
+  {
+    "text": "Blázen každého za blázna soudí.",
+    "blank": 4
+  },
+  {
+    "text": "Bližší košile nežli kabát.",
+    "blank": 4
+  },
+  {
+    "text": "Boží mlýny melou pomalu, ale jistě.",
+    "blank": 6
+  },
+  {
+    "text": "Bůh dal lidem pokrm, čert kuchaře.",
+    "blank": 6
+  },
+  {
+    "text": "Bylina bez květu, panna bez studu řídko přichází k jakému užitku.",
+    "blank": 6
+  },
+  {
+    "text": "Cizí blbec pro smích, vlastní pro ostudu.",
+    "blank": 4
+  },
+  {
+    "text": "Co je dovoleno pánovi, není dovoleno kmánovi.",
+    "blank": 4
+  },
+  {
+    "text": "Co je šeptem, to je s čertem.",
+    "blank": 6
+  },
+  {
+    "text": "Co je v domě, není pro mě.",
+    "blank": 4
+  },
+  {
+    "text": "Co je v domě, to se počítá.",
+    "blank": 7
+  },
+  {
+    "text": "Co jsi z úst vypustil, ani párem koní nedostaneš zpět.",
+    "blank": 8
+  },
+  {
+    "text": "Co můžeš udělat dnes, neodkládej na zítřek.",
+    "blank": 4
+  },
+  {
+    "text": "Co na srdci, to na jazyku.",
+    "blank": 6
+  },
+  {
+    "text": "Co nejde po dobrým, to půjde po zlým.",
+    "blank": 4
+  },
+  {
+    "text": "Co nejde silou, jde rozumem.",
+    "blank": 5
+  },
+  {
+    "text": "Co oči nevidí, to srdce nebolí (a ruce neukradnou).",
+    "blank": 6
+  },
+  {
+    "text": "Co se škádlívá, to se rádo mívá.",
+    "blank": 3
+  },
+  {
+    "text": "Co se v mládí naučíš, ke stáru jako když najdeš.",
+    "blank": 5
+  },
+  {
+    "text": "Co sis uvařil, to si sněz.",
+    "blank": 6
+  },
+  {
+    "text": "Co tě nezabije, to tě posílí.",
+    "blank": 6
+  },
+  {
+    "text": "Co tě nepálí, nehas.",
+    "blank": 4
+  },
+  {
+    "text": "Ctnost a pěknost jest milá společnost.",
+    "blank": 3
+  },
+  {
+    "text": "Ctnost a pokora nemá místo u dvora.",
+    "blank": 1
+  },
+  {
+    "text": "Ctnost a štěstí visí na tenké niti.",
+    "blank": 7
+  },
+  {
+    "text": "Ctnost sama se chválí.",
+    "blank": 4
+  },
+  {
+    "text": "Cvik dělá mistra.",
+    "blank": 3
+  },
+  {
+    "text": "Čas všechny rány zahojí.",
+    "blank": 1
+  },
+  {
+    "text": "Častá krůpěj kámen proráží.",
+    "blank": 2
+  },
+  {
+    "text": "Často lidé hynou klevetníků vinou.",
+    "blank": 4
+  },
+  {
+    "text": "Čím výše vystoupíš, tím hlouběji padáš.",
+    "blank": 3
+  },
+  {
+    "text": "Čím výše vystoupíš, tím větší rozhled.",
+    "blank": 6
+  },
+  {
+    "text": "Čiň čertu dobře, peklem se ti odmění.",
+    "blank": 4
+  },
+  {
+    "text": "Čistota – půl zdraví.",
+    "blank": 1
+  },
+  {
+    "text": "Člověk by neměl zestárnout, dokud nezmoudří.",
+    "blank": 6
+  },
+  {
+    "text": "Člověka při víně poznáš.",
+    "blank": 3
+  },
+  {
+    "text": "Dal ses na vojnu, tak bojuj.",
+    "blank": 4
+  },
+  {
+    "text": "Darovanému koni na zuby nehleď.",
+    "blank": 4
+  },
+  {
+    "text": "Devatero řemesel – desátá bída.",
+    "blank": 2
+  },
+  {
+    "text": "Dějiny píší vítězové.",
+    "blank": 1
+  },
+  {
+    "text": "Dnes tlusto a zejtra pusto.",
+    "blank": 5
+  },
+  {
+    "text": "Dobré jídlo, dobré pití prodlužují živobytí.",
+    "blank": 5
+  },
+  {
+    "text": "Dobré slovo i železná vrata otvírá.",
+    "blank": 4
+  },
+  {
+    "text": "Dočkej času jako husa klasu.",
+    "blank": 5
+  },
+  {
+    "text": "Drzé čelo lepší než poplužní dvůr.",
+    "blank": 6
+  },
+  {
+    "text": "Dvakrát měř, jednou řež.",
+    "blank": 4
+  },
+  {
+    "text": "Důvěřuj, ale prověřuj.",
+    "blank": 3
+  },
+  {
+    "text": "Hlad je nejlepší kuchař.",
+    "blank": 4
+  },
+  {
+    "text": "Hlad má velké oči.",
+    "blank": 4
+  },
+  {
+    "text": "Hloupý, kdo dává, hloupější, kdo nebere.",
+    "blank": 4
+  },
+  {
+    "text": "Hněv je špatný rádce.",
+    "blank": 4
+  },
+  {
+    "text": "Host do domu, pan do domu.",
+    "blank": 4
+  },
+  {
+    "text": "Chceš-li vědět, jaká bude tvá budoucí žena, podívej se na její maminku.",
+    "blank": 7
+  },
+  {
+    "text": "Chodí štěstí dokola, sem-tam sedne na vola.",
+    "blank": 7
+  },
+  {
+    "text": "Chybami se člověk učí.",
+    "blank": 4
+  },
+  {
+    "text": "Chytil se toho jak hovno košile.",
+    "blank": 5
+  },
+  {
+    "text": "Chytrému napověz, hloupého trkni.",
+    "blank": 2
+  },
+  {
+    "text": "Chytrost nejsou žádné čáry.",
+    "blank": 4
+  },
+  {
+    "text": "I mistr tesař se někdy utne.",
+    "blank": 6
+  },
+  {
+    "text": "I kdybys osla vedl do Paříže, komoň z něho nebude.",
+    "blank": 6
+  },
+  {
+    "text": "Jablko nepadá daleko od stromu.",
+    "blank": 5
+  },
+  {
+    "text": "Jak bys nosil dříví do lesa.",
+    "blank": 4
+  },
+  {
+    "text": "Jak se do lesa volá, tak se z lesa ozývá.",
+    "blank": 4
+  },
+  {
+    "text": "Jak si kdo ustele, tak si lehne.",
+    "blank": 7
+  },
+  {
+    "text": "Jaká matka, taká Katka.",
+    "blank": 4
+  },
+  {
+    "text": "Jaká paní, takový zažívání.",
+    "blank": 4
+  },
+  {
+    "text": "Jak zaseješ, tak sklidíš.",
+    "blank": 4
+  },
+  {
+    "text": "Varianta: Jak zaseješ, tak žíti budeš.",
+    "blank": 2
+  },
+  {
+    "text": "Jaký otec, takový syn.",
+    "blank": 2
+  },
+  {
+    "text": "Jaký pán, taký krám.",
+    "blank": 4
+  },
+  {
+    "text": "Jaký pán, takový pes.",
+    "blank": 2
+  },
+  {
+    "text": "Jaký šel, takového potkal.",
+    "blank": 4
+  },
+  {
+    "text": "Jeden za osmnáct, druhý bez dvou za dvacet.",
+    "blank": 3
+  },
+  {
+    "text": "Jedna chyba sto jiných za sebou táhne.",
+    "blank": 7
+  },
+  {
+    "text": "Jedna vlaštovka jaro nedělá.",
+    "blank": 3
+  },
+  {
+    "text": "Jen blbec se spálí dvakrát o stejná kamna.",
+    "blank": 8
+  },
+  {
+    "text": "Jen ten, kdo se odváží jít dál než ostatní, se dozví, jak daleko může doopravdy jít.",
+    "blank": 16
+  },
+  {
+    "text": "Jez do polosyta, pij do polopita, vyjdou ti na plno léta.",
+    "blank": 3
+  },
+  {
+    "text": "Ježek sám sobě kadeřav.",
+    "blank": 4
+  },
+  {
+    "text": "Kam čert nemůže, tam nastrčí ženskou.",
+    "blank": 6
+  },
+  {
+    "text": "Kam nechodí slunce, tam chodí lékař.",
+    "blank": 6
+  },
+  {
+    "text": "Kam oči, tam hlava, kam hlava, tam tělo.",
+    "blank": 8
+  },
+  {
+    "text": "Kam strom ohýbáš, tam roste.",
+    "blank": 2
+  },
+  {
+    "text": "Kázeň a dobrá metlička k dobrému vede Jeníčka.",
+    "blank": 8
+  },
+  {
+    "text": "Každá liška svůj ocas chválí.",
+    "blank": 5
+  },
+  {
+    "text": "Každá slepice hrabe pod sebe, nikdy od sebe.",
+    "blank": 2
+  },
+  {
+    "text": "Každý ať zamete nejprv před svým prahem.",
+    "blank": 7
+  },
+  {
+    "text": "Každý chvilku tahá pilku.",
+    "blank": 4
+  },
+  {
+    "text": "Každý svého štěstí strůjcem.",
+    "blank": 4
+  },
+  {
+    "text": "Kde je kozel zahradníkem, stará baba poručníkem, aby čert byl služebníkem.",
+    "blank": 3
+  },
+  {
+    "text": "Kde nic není, ani smrt nebere.",
+    "blank": 5
+  },
+  {
+    "text": "Kde rodina v rozbroji, tam je zlato na hnoji.",
+    "blank": 9
+  },
+  {
+    "text": "Kdo čerstvý sýr jí, pes ho nekousne, zloděj ho neokrade, aniž zestárne.",
+    "blank": 3
+  },
+  {
+    "text": "Kdo čočku vaří, najde si brzo holku.",
+    "blank": 2
+  },
+  {
+    "text": "Kdo dřív přijde, ten dřív mele.",
+    "blank": 6
+  },
+  {
+    "text": "Kdo hodně chce, tomu hodně schází.",
+    "blank": 6
+  },
+  {
+    "text": "Kdo chce kam, pomozme mu tam.",
+    "blank": 6
+  },
+  {
+    "text": "Kdo chce, hledá způsoby, kdo nechce, hledá důvody.",
+    "blank": 4
+  },
+  {
+    "text": "Kdo chce psa bít, hůl si vždy najde.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo chce s vlky žíti, musí s nimi výti.",
+    "blank": 9
+  },
+  {
+    "text": "Kdo je zvědavý, bude brzo starý.",
+    "blank": 6
+  },
+  {
+    "text": "Kdo jinému jámu kopá, sám do ní padá.",
+    "blank": 4
+  },
+  {
+    "text": "Srovnej v Bibli: Kdo jámu kopá, do ní upadá, a kdo valí kámen, na něj se obrací.",
+    "blank": 12
+  },
+  {
+    "text": "Kdo lže, ten i krade.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo má viset se neutopí, i kdyby šla voda přes šibenici",
+    "blank": 5
+  },
+  {
+    "text": "Kdo míří vysoko, padá nízko.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo nemá, s kým by se vadil, pojmi sobě ženu.",
+    "blank": 9
+  },
+  {
+    "text": "Kdo nemá svý muzikanty, na hubu si píská.",
+    "blank": 4
+  },
+  {
+    "text": "Kdo neseje, ten nesklízí.",
+    "blank": 2
+  },
+  {
+    "text": "Varianta: Kdo neseje, ten nevěje.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo nic nedělá, nic nezkazí.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo nic nemá, nic neztratí.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo plevy seje, málo nažne.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo po tobě kamenem, ty po do něho chlebem.",
+    "blank": 6
+  },
+  {
+    "text": "Kdo pozdě chodí, sám sobě škodí.",
+    "blank": 9
+  },
+  {
+    "text": "Kdo se bojí, nesmí do lesa.",
+    "blank": 3
+  },
+  {
+    "text": "Varianta: Kdo se chřestu bojí, nechoď do lesa.",
+    "blank": 4
+  },
+  {
+    "text": "Kdo se do ničeho nežene, nic nezkazí.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo se moc ptá, moc se dozví.",
+    "blank": 7
+  },
+  {
+    "text": "Kdo se směje naposled, ten se směje nejlíp.",
+    "blank": 4
+  },
+  {
+    "text": "Kdo seje vítr, sklízí bouři.",
+    "blank": 3
+  },
+  {
+    "text": "Kdo si krká, kdo si prdí, ten si jenom zdraví tvrdí.",
+    "blank": 3
+  },
+  {
+    "text": "Kdo si svého mistra váží, na toho hlad nedoráží.",
+    "blank": 8
+  },
+  {
+    "text": "Kdo spí, jako by jedl.",
+    "blank": 5
+  },
+  {
+    "text": "Kdo šetří, má.",
+    "blank": 2
+  },
+  {
+    "text": "Varianta: Kdo šetří, má za tři.",
+    "blank": 3
+  },
+  {
+    "text": "Kdybys desetkrát chtěl, bejka nepodojíš.",
+    "blank": 4
+  },
+  {
+    "text": "Když dub padne, kdekdo třísky sbírá.",
+    "blank": 5
+  },
+  {
+    "text": "Když dva dělají totéž, není to totéž.",
+    "blank": 4
+  },
+  {
+    "text": "Když hra nejlepší, přestaň!",
+    "blank": 3
+  },
+  {
+    "text": "Když ne po dobru, tak po zlu.",
+    "blank": 2
+  },
+  {
+    "text": "Když pánbůh dopustí, i motyka spustí.",
+    "blank": 5
+  },
+  {
+    "text": "Když ptáčka lapají, pěkně mu zpívají.",
+    "blank": 6
+  },
+  {
+    "text": "Když si dobře nepokakáš – ani dobře nepopapáš.",
+    "blank": 4
+  },
+  {
+    "text": "Když se dva perou, třetí se směje.",
+    "blank": 4
+  },
+  {
+    "text": "Když se kácí les, tak lítají třísky.",
+    "blank": 7
+  },
+  {
+    "text": "Když se zapne první knoflík špatně, tak je celé zapínání špatné.",
+    "blank": 6
+  },
+  {
+    "text": "Koho Bůh miluje, toho také křížem navštěvuje.",
+    "blank": 2
+  },
+  {
+    "text": "Koho chleba jíš, toho píseň zpívej.",
+    "blank": 2
+  },
+  {
+    "text": "Koho jednou had uštknul, i stočeného provazu se bojí.",
+    "blank": 6
+  },
+  {
+    "text": "Koho se dobrá slova nechytají, toho se musí karabáč chytati.",
+    "blank": 9
+  },
+  {
+    "text": "Koho včera oběsili, k tomu se dnes modlí.",
+    "blank": 8
+  },
+  {
+    "text": "Kolik řečí umíš, tolikrát jsi člověkem.",
+    "blank": 2
+  },
+  {
+    "text": "Komu není rady, tomu není pomoci.",
+    "blank": 6
+  },
+  {
+    "text": "Komu není shůry dáno, v apatyce nekoupí.",
+    "blank": 6
+  },
+  {
+    "text": "Komu se nelení, tomu se zelení.",
+    "blank": 3
+  },
+  {
+    "text": "Koně můžeš přivést k vodě, ale napít se musí sám.",
+    "blank": 5
+  },
+  {
+    "text": "Koně za ovsem běží, osli ho dostávají.",
+    "blank": 3
+  },
+  {
+    "text": "Kovářovic kobyla chodí bosa.",
+    "blank": 2
+  },
+  {
+    "text": "Kozel dlouhou bradu má, a přece není mudrc.",
+    "blank": 8
+  },
+  {
+    "text": "Krásná žena – zbytečná starost.",
+    "blank": 2
+  },
+  {
+    "text": "Kráva zajíce nedohoní.",
+    "blank": 1
+  },
+  {
+    "text": "Kuj železo, dokud je žhavé.",
+    "blank": 5
+  },
+  {
+    "text": "Láska hory přenáší.",
+    "blank": 2
+  },
+  {
+    "text": "Lenoch se nejvíc sedře.",
+    "blank": 1
+  },
+  {
+    "text": "Lehce nabyl, lehce pozbyl.",
+    "blank": 2
+  },
+  {
+    "text": "Lepší dobře se oběsit, než zle oženit.",
+    "blank": 0
+  },
+  {
+    "text": "Lepší vrabec v hrsti, nežli holub na střeše.",
+    "blank": 6
+  },
+  {
+    "text": "Letíš jako pšíkanec z nosu.",
+    "blank": 3
+  },
+  {
+    "text": "Levné maso psi žerou.",
+    "blank": 2
+  },
+  {
+    "text": "Lež má krátké nohy.",
+    "blank": 3
+  },
+  {
+    "text": "Varianta: Lež má krátké nohy, daleko nedojde.",
+    "blank": 7
+  },
+  {
+    "text": "Líná huba – holé neštěstí.",
+    "blank": 5
+  },
+  {
+    "text": "Malé ryby – taky ryby.",
+    "blank": 5
+  },
+  {
+    "text": "Manželství bez dětí, den bez slunéčka.",
+    "blank": 3
+  },
+  {
+    "text": "Mezi slepými jednooký králem.",
+    "blank": 3
+  },
+  {
+    "text": "Mladí ležáci – staří žebráci.",
+    "blank": 5
+  },
+  {
+    "text": "Mluviti stříbro, mlčeti zlato.",
+    "blank": 4
+  },
+  {
+    "text": "Mokro hřeje.",
+    "blank": 1
+  },
+  {
+    "text": "Mráz kopřivu nespálí.",
+    "blank": 1
+  },
+  {
+    "text": "Mrtvý prd ví.",
+    "blank": 1
+  },
+  {
+    "text": "Můj dům – můj hrad.",
+    "blank": 5
+  },
+  {
+    "text": "My o vlku a vlk za dveřmi.",
+    "blank": 7
+  },
+  {
+    "text": "Má oko jak z  kašparovy krávy.",
+    "blank": 6
+  },
+  {
+    "text": "Na svatého Václava, pěkný čas nastává.",
+    "blank": 3
+  },
+  {
+    "text": "Na hrubý pytel, hrubá záplata.",
+    "blank": 5
+  },
+  {
+    "text": "Na každém šprochu pravdy trochu.",
+    "blank": 4
+  },
+  {
+    "text": "Na každou svini se vaří voda.",
+    "blank": 6
+  },
+  {
+    "text": "Na každou svini se najde řezník.",
+    "blank": 6
+  },
+  {
+    "text": "Náš zákazník, náš pán.",
+    "blank": 4
+  },
+  {
+    "text": "Naděje umírá poslední.",
+    "blank": 1
+  },
+  {
+    "text": "Nahoře huj a vespod fuj.",
+    "blank": 5
+  },
+  {
+    "text": "Nakřápnutý hrnec nejdéle vydrží.",
+    "blank": 1
+  },
+  {
+    "text": "Nebuď zvědavej, budeš brzo starej.",
+    "blank": 5
+  },
+  {
+    "text": "Nekupuj zajíce v pytli.",
+    "blank": 2
+  },
+  {
+    "text": "Nehas, co tě nepálí.",
+    "blank": 4
+  },
+  {
+    "text": "Neházej flintu do žita.",
+    "blank": 4
+  },
+  {
+    "text": "Neházej perly sviním.",
+    "blank": 2
+  },
+  {
+    "text": "Nehodí se to do řepy ani do zelí.",
+    "blank": 5
+  },
+  {
+    "text": "Nechval dne před večerem.",
+    "blank": 4
+  },
+  {
+    "text": "Někdo rád holky, jinej zas vdolky.",
+    "blank": 6
+  },
+  {
+    "text": "Někomu husu, někomu prase.",
+    "blank": 4
+  },
+  {
+    "text": "Nemluv o provaze v oběšencově domě.",
+    "blank": 5
+  },
+  {
+    "text": "Nemoc na koni přijíždí a pěšky odchází.",
+    "blank": 3
+  },
+  {
+    "text": "Nemusí pršet, stačí, když kape.",
+    "blank": 5
+  },
+  {
+    "text": "Nemůžeš kázat vodu a pít víno.",
+    "blank": 6
+  },
+  {
+    "text": "Není hospůdky, by nebylo půtky.",
+    "blank": 5
+  },
+  {
+    "text": "Není každý den posvícení.",
+    "blank": 4
+  },
+  {
+    "text": "Není lepší silnice, než z kuchyně do pivnice.",
+    "blank": 8
+  },
+  {
+    "text": "Není růže bez trní.",
+    "blank": 4
+  },
+  {
+    "text": "Není všechno zlato, co se třpytí.",
+    "blank": 6
+  },
+  {
+    "text": "Neotvírej, dokud jsi neodemkl.",
+    "blank": 4
+  },
+  {
+    "text": "Nesklízej, cos nezasel.",
+    "blank": 3
+  },
+  {
+    "text": "Nesuď knihu podle obalu.",
+    "blank": 4
+  },
+  {
+    "text": "Neštěstí nechodí po horách, ale po lidech.",
+    "blank": 4
+  },
+  {
+    "text": "Nevadí, nevadí, znova se nasadí.",
+    "blank": 5
+  },
+  {
+    "text": "Nevstoupíš dvakrát do téže řeky.",
+    "blank": 5
+  },
+  {
+    "text": "Nezasel, prý aby mu kroupy nepobily.",
+    "blank": 5
+  },
+  {
+    "text": "Nové koště dobře mete.",
+    "blank": 4
+  },
+  {
+    "text": "Na jazyku med, na srdci jed.",
+    "blank": 6
+  },
+  {
+    "text": "Nikdy není tak špatně, aby nebylo ještě hůř.",
+    "blank": 4
+  },
+  {
+    "text": "Od svatého Martina, zahřeje jen peřina.",
+    "blank": 3
+  },
+  {
+    "text": "Odříkaného chleba největší krajíc.",
+    "blank": 4
+  },
+  {
+    "text": "Odvážnému štěstí přeje.",
+    "blank": 3
+  },
+  {
+    "text": "Oheň je dobrý sluha, ale zlý pán.",
+    "blank": 7
+  },
+  {
+    "text": "Oko – do duše okno.",
+    "blank": 4
+  },
+  {
+    "text": "Oko za oko, zub za zub.",
+    "blank": 6
+  },
+  {
+    "text": "Otevírej oči, nikoli ústa.",
+    "blank": 2
+  },
+  {
+    "text": "Pečení holubi nelítají do huby.",
+    "blank": 2
+  },
+  {
+    "text": "Peníze dělaj peníze.",
+    "blank": 3
+  },
+  {
+    "text": "Pes, který štěká, nekouše.",
+    "blank": 4
+  },
+  {
+    "text": "Pilná včela jaro dělá.",
+    "blank": 3
+  },
+  {
+    "text": "Píseň zahání tíseň.",
+    "blank": 1
+  },
+  {
+    "text": "Plný břich, rozum tich.",
+    "blank": 4
+  },
+  {
+    "text": "Po bitvě je každý generál.",
+    "blank": 2
+  },
+  {
+    "text": "Pod svícnem bývá největší tma.",
+    "blank": 5
+  },
+  {
+    "text": "Pokroucené dřevo se těžko napřímí.",
+    "blank": 2
+  },
+  {
+    "text": "Pomocnou ruku najdeš nejspíše na konci svého ramene.",
+    "blank": 8
+  },
+  {
+    "text": "Pomoz si sám a Bůh ti pomůže.",
+    "blank": 5
+  },
+  {
+    "text": "Potmě každá kočka černá.",
+    "blank": 3
+  },
+  {
+    "text": "Potrefená husa nejvíc kejhá.",
+    "blank": 4
+  },
+  {
+    "text": "Pozdě bycha honit.",
+    "blank": 2
+  },
+  {
+    "text": "Pozdní hosti jedí kosti.",
+    "blank": 4
+  },
+  {
+    "text": "Práce kvapná málo platná.",
+    "blank": 2
+  },
+  {
+    "text": "Práce šlechtí člověka.",
+    "blank": 2
+  },
+  {
+    "text": "Prázdný sud nejvíce duní.",
+    "blank": 2
+  },
+  {
+    "text": "Pro jedno kvítí slunce nesvítí.",
+    "blank": 4
+  },
+  {
+    "text": "Prodávám jak jsem koupil.",
+    "blank": 4
+  },
+  {
+    "text": "Proti gustu žádný dišputát.",
+    "blank": 4
+  },
+  {
+    "text": "Protiklady (protivy) se přitahují.",
+    "blank": 4
+  },
+  {
+    "text": "Prvními předchůdci v lásce jsou oči.",
+    "blank": 6
+  },
+  {
+    "text": "Přátelské služby se neúčtují.",
+    "blank": 1
+  },
+  {
+    "text": "Přijít s křížkem po funuse.",
+    "blank": 3
+  },
+  {
+    "text": "(Příliš) mnoho psů – zajícova smrt.",
+    "blank": 3
+  },
+  {
+    "text": "Přítel k pomoci třeba o půlnoci.",
+    "blank": 1
+  },
+  {
+    "text": "Psu ocas nenarovnáš.",
+    "blank": 1
+  },
+  {
+    "text": "Ptáka poznáš po peří, vlka po srsti, člověka po řeči.",
+    "blank": 10
+  },
+  {
+    "text": "Pýcha peklem dýchá.",
+    "blank": 2
+  },
+  {
+    "text": "Pýcha předchází pád.",
+    "blank": 1
+  },
+  {
+    "text": "Ranní ptáče dál doskáče.",
+    "blank": 4
+  },
+  {
+    "text": "Ráno moudřejší večera.",
+    "blank": 3
+  },
+  {
+    "text": "Ruka ruku myje.",
+    "blank": 3
+  },
+  {
+    "text": "Ryba i host třetí den smrdí.",
+    "blank": 6
+  },
+  {
+    "text": "Ryba smrdí od hlavy.",
+    "blank": 2
+  },
+  {
+    "text": "Ryba hledá kde je hloub, člověk kde líp.",
+    "blank": 5
+  },
+  {
+    "text": "Řekni, jakého máš kamaráda, a já ti řeknu, co jsi zač.",
+    "blank": 4
+  },
+  {
+    "text": "Řemeslo má zlaté dno.",
+    "blank": 3
+  },
+  {
+    "text": "S poctivostí nejdál dojdeš.",
+    "blank": 2
+  },
+  {
+    "text": "S čím kdo zachází, tím také schází.",
+    "blank": 4
+  },
+  {
+    "text": "S chutí do toho, půl je hotovo.",
+    "blank": 5
+  },
+  {
+    "text": "S jídlem roste chuť.",
+    "blank": 4
+  },
+  {
+    "text": "S úsměvem jde všechno líp.",
+    "blank": 2
+  },
+  {
+    "text": "Sedávej panenko v koutě, budeš-li hodná, najdou tě.",
+    "blank": 2
+  },
+  {
+    "text": "Sejde z očí, sejde z mysli.",
+    "blank": 6
+  },
+  {
+    "text": "Sklenka vína ti neuškodí, a plnou bečku nevypiješ.",
+    "blank": 7
+  },
+  {
+    "text": "Slíbíš-li za druhého, dej půl svého.",
+    "blank": 5
+  },
+  {
+    "text": "Smaž hada, jak chceš, nebude z něho úhoř.",
+    "blank": 8
+  },
+  {
+    "text": "Smůla ve hře, štěstí v lásce.",
+    "blank": 3
+  },
+  {
+    "text": "Snídani sněz sám, o oběd se poděl s přítelem a večeři dej nepříteli.",
+    "blank": 3
+  },
+  {
+    "text": "Stará láska nerezaví.",
+    "blank": 3
+  },
+  {
+    "text": "Starého psa novým kouskům nenaučíš.",
+    "blank": 1
+  },
+  {
+    "text": "Stokrát nic umořilo osla.",
+    "blank": 4
+  },
+  {
+    "text": "Stokrát opakovaná lež se stává pravdou.",
+    "blank": 6
+  },
+  {
+    "text": "Strach má velké oči.[pozn. ",
+    "blank": 4
+  },
+  {
+    "text": "Svůj k svému.",
+    "blank": 3
+  },
+  {
+    "text": "Sytý hladovému nevěří.",
+    "blank": 2
+  },
+  {
+    "text": "Šaty dělaj člověka.",
+    "blank": 1
+  },
+  {
+    "text": "Ševcova žena a kovářova kobyla chodí bosy.",
+    "blank": 7
+  },
+  {
+    "text": "Ševče, drž se svého kopyta.",
+    "blank": 5
+  },
+  {
+    "text": "Šij nebo párej, všechno robota.",
+    "blank": 3
+  },
+  {
+    "text": "Špatný vozka, který neumí obrátit!",
+    "blank": 1
+  },
+  {
+    "text": "Škoda krásy, kde rozumu není.",
+    "blank": 4
+  },
+  {
+    "text": "Škoda rány, která padne vedle.",
+    "blank": 4
+  },
+  {
+    "text": "Tak dlouho se chodí se džbánem pro vodu, až se ucho utrhne.",
+    "blank": 12
+  },
+  {
+    "text": "Těžko na cvičišti, lehko na bojišti.",
+    "blank": 6
+  },
+  {
+    "text": "Tichá voda břehy mele.",
+    "blank": 4
+  },
+  {
+    "text": "To nejlepší na konec.",
+    "blank": 4
+  },
+  {
+    "text": "Tonoucí se stébla chytá.",
+    "blank": 1
+  },
+  {
+    "text": "Trpělivost růže přináší.",
+    "blank": 2
+  },
+  {
+    "text": "Tudy cesta nevede, přes tohle vlak nejede.",
+    "blank": 6
+  },
+  {
+    "text": "Účel světí prostředky.",
+    "blank": 2
+  },
+  {
+    "text": "V hněvu vyvře, co na srdci vře.",
+    "blank": 6
+  },
+  {
+    "text": "V nouzi poznáš přítele.",
+    "blank": 4
+  },
+  {
+    "text": "Veselá mysl – půl zdraví.",
+    "blank": 5
+  },
+  {
+    "text": "Vlastní chvála z hrdla páchne.",
+    "blank": 4
+  },
+  {
+    "text": "Vlk se nažral a koza zůstala celá.",
+    "blank": 5
+  },
+  {
+    "text": "Vlky žene z lesů hlad.",
+    "blank": 4
+  },
+  {
+    "text": "Vojna není kojná.",
+    "blank": 3
+  },
+  {
+    "text": "Volům kroky a jelenům skoky.",
+    "blank": 4
+  },
+  {
+    "text": "Vrána k vráně sedá, rovný rovného si hledá.",
+    "blank": 5
+  },
+  {
+    "text": "Všeho nechám, už tam spěchám.",
+    "blank": 2
+  },
+  {
+    "text": "Všechna sláva, polní tráva.",
+    "blank": 4
+  },
+  {
+    "text": "Všeho s mírou.",
+    "blank": 3
+  },
+  {
+    "text": "Všechno zlé je pro něco dobré.",
+    "blank": 6
+  },
+  {
+    "text": "Všude dobře, doma nejlépe.",
+    "blank": 3
+  },
+  {
+    "text": "Vrána vráně oči nevyklove.",
+    "blank": 4
+  },
+  {
+    "text": "Výjimka potvrzuje pravidlo.",
+    "blank": 3
+  },
+  {
+    "text": "Vzduch – boží duch.",
+    "blank": 1
+  },
+  {
+    "text": "Za dobrotu na žebrotu.",
+    "blank": 4
+  },
+  {
+    "text": "Zadarmo ani kuře nehrabe.",
+    "blank": 3
+  },
+  {
+    "text": "Zahálky jsa služebníkem, neběduj, žes hadrníkem.",
+    "blank": 6
+  },
+  {
+    "text": "Z cizího krev neteče.",
+    "blank": 3
+  },
+  {
+    "text": "Zítra je taky den.",
+    "blank": 1
+  },
+  {
+    "text": "Zakázané ovoce chutná nejlépe.",
+    "blank": 1
+  },
+  {
+    "text": "Zlaté slovo, které zůstane v ústech.",
+    "blank": 6
+  },
+  {
+    "text": "Z tváří mysl září.",
+    "blank": 4
+  },
+  {
+    "text": "Zvyk je železná košile.",
+    "blank": 3
+  },
+  {
+    "text": "Žába močál vždy najde.",
+    "blank": 2
+  },
+  {
+    "text": "Žádná píseň není tak dlouhá, aby jí nebyl konec.",
+    "blank": 2
+  },
+  {
+    "text": "Žádný strom neroste do nebe.",
+    "blank": 5
+  },
+  {
+    "text": "Žádný učený z nebe nespadl.",
+    "blank": 4
+  },
+  {
+    "text": "Ženský pláč, babí hněv a psí kulhání nemá dlouhého panování.",
+    "blank": 10
+  },
+  {
+    "text": "Žízeň je věčná.",
+    "blank": 3
+  }
+]
