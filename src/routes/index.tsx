@@ -1,98 +1,184 @@
-import type { QwikKeyboardEvent } from "@builder.io/qwik";
-import { $, component$, useStore, useTask$ } from "@builder.io/qwik";
+import { component$, useClientEffect$, useStore, useTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import * as fs from "fs";
+import { Config } from "~/config";
 
-export const surrender = (spanElement: HTMLSpanElement, button: HTMLButtonElement, blankWord: string, next: () => void) => {
-
-
-  if (spanElement.dataset.correct === "false") {
-    next();
-    spanElement.dataset.correct = "";
-    spanElement.innerText = "";
-    button.innerText = "nevím";
-    return;
+type Store = {
+  enteredText: string,
+  status: "guessing" | "correct" | "incorrect",
+  element: {
+    opacity: number
+  },
+  streak: number,
+  activeProverb: {
+    text: string,
+    lastLetter: string,
+    renderText: string[],
+    blank: number,
+    blankWord: string
   }
-  spanElement.dataset.correct = "false";
-  spanElement.innerText = blankWord;
-  button.innerText = "další";
+}
+export const changeProverb = (store: Store) => {
+  (async () => {
+    return await (await fetch(Config.apiUrl + "/proverb/_random")).json();
+  })();
+
+  /**
+   * IF correct
+   * 0 start loading SAME
+   * 0 start confetti
+   * 2500 animate out
+   * 3000 stop confetti
+   * 3000 animate in
+   *
+   * ELSE
+   * 0 start loading SAME
+   * 0 animate out
+   * 500 animate in
+   */
+
+  const newProverb = (async () => {
+    return await (await fetch(Config.apiUrl + "/proverb/_random")).json();
+  })();
+
+
+  const animateOut = () => {
+    store.element.opacity = 0;
+    setTimeout(() => {
+      // while invisible
+      store.status = "guessing";
+      store.enteredText = "";
+
+      if (typeof document !== "undefined") {
+        (document.getElementById("tm-proverb-input") as HTMLSpanElement).innerText = store.enteredText;
+      }
+    }, 300);
+  };
+  const animateIn = async () => {
+    if (typeof document !== "undefined") {
+      (document.getElementById("tm-proverb-input") as HTMLSpanElement).focus();
+      (document.getElementById("tm-nav") as HTMLSpanElement).scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+      });
+    }
+    store.activeProverb = await newProverb;
+    store.element.opacity = 1;
+  };
+
+  if (store.status === "correct") {
+    const startConfetti = new Event("confetti-start");
+    const stopConfetti = new Event("confetti-stop");
+    document.dispatchEvent(startConfetti);
+    setTimeout(animateOut, 2500);
+    setTimeout(() => document.dispatchEvent(stopConfetti), 3000);
+    setTimeout(animateIn, 3000);
+
+  } else if (store.status === "incorrect") {
+    animateOut();
+    setTimeout(animateIn, 500);
+  } else if (store.status === "guessing") {
+    animateIn().then(() => null);
+  }
+
 };
 
 export default component$(() => {
 
-  const store = useStore({
-    active: {
-      "text": "Když dub padne, kdekdo třísky sbírá.",
-      "lastLetter": "",
-      "renderText": ["Když dub padne, kdekdo", "sbírá."],
-      "blank": 5,
-      "blankWord": "trisky"
+
+  const store = useStore<Store>({
+    enteredText: "",
+    status: "guessing",
+    streak: 0,
+    activeProverb: {
+      text: "Když dub padne, kdekdo třísky sbírá.",
+      lastLetter: "",
+      renderText: ["Když dub padne, kdekdo", "sbírá."],
+      blank: 5,
+      blankWord: "třísky"
     },
-    data: []
-  });
-
-  useTask$(() => {
-    store.data = JSON.parse(fs.readFileSync("./bin/data.json").toString());
-    store.active = getRandomItem(store.data);
-  });
-
-
-  const handleAnswerChange = $((event: QwikKeyboardEvent<HTMLSpanElement>) => {
-    if (event.key === "Escape") {
-      // @ts-ignore
-      surrender(event.target, document.getElementById("tm-surrender"), store.active.blankWord, () => {
-        store.active = getRandomItem(store.data);
-      });
-
-      return;
+    element: {
+      opacity: 0
     }
+  }, { recursive: true });
 
-    // @ts-ignore
-    if (event.target.dataset.correct === "false") {
-      return;
-    }
-    // @ts-ignore
-    if (slugify(event.target.innerText.toLowerCase()) === slugify(store.active.blankWord.toLowerCase())) {
-      const startConfetti = new Event("confetti-start");
-      const stopConfetti = new Event("confetti-stop");
-      document.dispatchEvent(startConfetti);
-      // @ts-ignore
-      event.target.innerText = store.active.blankWord;
-      // @ts-ignore
-      event.target.dataset.correct = "true";
-      setTimeout(function() {
-        document.dispatchEvent(stopConfetti);
-        store.active = getRandomItem(store.data);
-        // @ts-ignore
-        event.target.dataset.correct = "";
-        // @ts-ignore
-        event.target.innerText = "";
-      }, 2000);
+
+  /**
+   * Check for correct answer
+   */
+  useTask$(({ track }) => {
+    track(() => store.enteredText);
+    if (simplifyLatin(store.enteredText) === simplifyLatin(store.activeProverb.blankWord) && store.status !== "incorrect") {
+      store.status = "correct";
+      store.streak = store.streak + 1;
+      if (typeof document !== "undefined") {
+        (document.getElementById("tm-proverb-input") as HTMLSpanElement).innerText = store.activeProverb.blankWord;
+      }
+      changeProverb(store);
     }
   });
-  // @ts-ignore
+
+  useTask$(({ track }) => {
+    track(() => store.streak);
+
+    if (typeof document !== "undefined") {
+      (document.getElementById("tm-proverb-streak") as HTMLSpanElement).innerText = String(store.streak);
+    }
+  });
+
+  useClientEffect$(() => {
+    changeProverb(store);
+    document.addEventListener("keyup", (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        (document.getElementById("tm-proverb-button") as HTMLButtonElement).click();
+      }
+    });
+  });
+
+
   return (
-    <div class={"mx-auto mt-10 mb-20 "}>
-      <div>
-        <p class={"text-4xl text-center max-w-4xl leading-relaxed"}>{store.active.renderText[0]} <span
-          id={"tm-magic-input"}
-          onKeyUp$={handleAnswerChange}
-          autofocus
-          contentEditable={"true"}
-          class={"relative magic-input outline-none w-auto"}
-          autocorrect="off"
-          autocapitalize="off"
-        ></span> &nbsp;{store.active.renderText[1]} <br />
-          <button id={"tm-surrender"}
-                  class={"py-2 text-lg px-10 border-2 border-sky-600 rounded-2xl mt-8 mx-auto"}
-                  onClick$={() => {
-                    // @ts-ignore
-                    surrender(document.getElementById("tm-magic-input"), document.getElementById("tm-surrender"), store.active.blankWord, () => {
-                      store.active = getRandomItem(store.data);
-                    });
-                  }}
-          >nevím
-          </button>
+    <div class={"mx-auto mt-4 mb-20 "}>
+      <div class={"flex flex-col"}>
+        <button id={"tm-proverb-button"}
+                class={"py-2 text-lg px-10 text-white bg-slate-800 mt-2 mb-2 rounded-2xl mx-auto"}
+                onClick$={() => {
+                  if (store.status === "guessing") {
+                    store.status = "incorrect";
+                    store.enteredText = store.activeProverb.blankWord;
+                    store.streak = 0;
+                    if (typeof document !== "undefined") {
+                      (document.getElementById("tm-proverb-input") as HTMLSpanElement).innerText = store.enteredText;
+                    }
+                  } else {
+                    changeProverb(store);
+                  }
+                }}
+        >
+          {(store.status === "guessing") ? "nevím" : "další"}
+        </button>
+        <p id={"tm-proverb-area"}
+           class={"text-4xl text-center max-w-4xl leading-relaxed proverb-wrapper"}
+           style={"opacity: " + store.element.opacity + ";"}>
+          {store.activeProverb.renderText[0]}
+          {/*@ts-ignore */}
+          <span autofocus autocorrect="off" autocapitalize="off" contentEditable={store.status === "guessing"}
+                id={"tm-proverb-input"}
+                preventdefault:keyup
+                onKeyUp$={(ev) => (store.enteredText = (ev.target as HTMLSpanElement).innerText)}
+                value={store.enteredText}
+                data-correct={(() => {
+                  switch (store.status) {
+                    case "correct":
+                      return "true";
+                    case "incorrect":
+                      return "false";
+                    case "guessing":
+                      return "";
+                  }
+                })()}
+                class={"relative magic-input outline-none w-auto"}
+          ></span>
+          &nbsp;{store.activeProverb.renderText[1]}
         </p>
 
       </div>
@@ -112,70 +198,8 @@ export default component$(() => {
   );
 });
 
-export function getRandomItem(data: any[]) {
-  // const data = getData();
-  let item: any = data[Math.floor(Math.random() * data.length)];
 
-  const randomItem = () => {
-    item = data[Math.floor(Math.random() * data.length)];
-    if (item.blank <= 0 || item.blank === null) {
-      randomItem();
-    }
-  };
-  randomItem();
-
-
-  const textArray = item.text.split(" ");
-
-
-  let lastLetter = "";
-  let word: string = textArray[item.blank - 1];
-  // textArray = textArray.splice(item.blank - 1)
-  try {
-    if ([".", "!", ","].includes(word.substring(word.length - 1))) {
-      lastLetter = word.substring(word.length - 1);
-      word = word.substring(0, word.length - 1);
-    }
-  } catch (e) {
-    console.log(e);
-    console.log("WORD: ", word);
-  }
-
-  const renderText = ["", ""];
-
-  textArray.map((currentWord: string, index: number) => {
-    if (index === item.blank - 1) {
-
-      renderText[1] = renderText[1] + lastLetter;
-      if (lastLetter === ",") {
-        renderText[1] = renderText[1] + " ";
-      }
-      return;
-    }
-
-    if (index < item.blank - 1) {
-      renderText[0] = renderText[0] + currentWord + " ";
-      return;
-    }
-
-    if (index > item.blank - 1) {
-      renderText[1] = renderText[1] + currentWord + " ";
-      return;
-    }
-
-  });
-
-  return {
-    text: item.text,
-    renderText: renderText,
-    blank: item.blank,
-    lastLetter: lastLetter,
-    blankWord: word
-  };
-
-}
-
-export function slugify(text: string) {
+export function simplifyLatin(text: string) {
   const from = "úůěščřžýíéãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";
   const to = "uuescrzyieaaaaaeeeeeiiiiooooouuuunc------";
 

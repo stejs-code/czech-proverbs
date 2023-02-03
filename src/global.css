@@ -2,23 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.proverb-wrapper {
+    transition: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+}
+
 .magic-input {
     @apply py-2;
     border-radius: 15px;
     transition: all .3s;
     text-decoration: underline black solid;
+    margin: 0 10px -24px;
+    overflow: hidden;
+    display: inline-block;
+    min-width: 20px;
 }
 
 .magic-input:before {
-    content: "‎ ‎ ‎ ‎ ‎ ‎ ";
+    content: "‎ ‎ ‎ ‎ ‎ ‎";
     text-decoration: underline black solid;
-    /*padding-left: 40px;*/
 }
 
 .magic-input:after {
-    content: "‎ ‎ ‎ ‎ ‎ ‎ ";
+    content: "‎ ‎ ‎ ‎ ‎ ‎";
     text-decoration: underline black solid;
-    /*padding-left: 40px;*/
 }
 
 .magic-input[data-correct="true"] {
@@ -35,7 +43,7 @@
 
 .magic-input[data-correct="true"]:after {
     content: "🎉";
-    padding-left: 18px;
+    padding: 0 20px 0 18px;
     text-decoration: none;
 }
 

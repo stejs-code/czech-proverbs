@@ -6,7 +6,7 @@ export default component$(() => {
     <>
       <main>
         <Header />
-        <section class={"flex flex-column pt-10 mx-4"}>
+        <section class={"flex flex-column mx-4"}>
           <Slot />
         </section>
       </main>

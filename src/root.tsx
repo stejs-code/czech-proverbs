@@ -1,5 +1,10 @@
 import { component$, useStyles$ } from '@builder.io/qwik';
-import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
+import type { RouteLocation } from "@builder.io/qwik-city"
+import {
+  QwikCityProvider,
+  RouterOutlet,
+  ServiceWorkerRegister
+} from "@builder.io/qwik-city";
 import { RouterHead } from './components/router-head/router-head';
 
 import globalStyles from './global.css?inline';
@@ -28,3 +33,7 @@ export default component$(() => {
     </QwikCityProvider>
   );
 });
+
+export function url(loc:RouteLocation) {
+  return loc.href.substring(0, loc.href.lastIndexOf("/"))
+}
