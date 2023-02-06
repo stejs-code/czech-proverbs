@@ -202,6 +202,7 @@ export default component$(() => {
 export function simplifyLatin(text: string) {
   const from = "úůěščřžýíéãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";
   const to = "uuescrzyieaaaaaeeeeeiiiiooooouuuunc------";
+  text = text.toLowerCase();
 
   const newText = Array.from(text)
     .map((c) => {
